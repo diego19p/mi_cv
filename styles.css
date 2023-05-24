@@ -1,0 +1,151 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+.landing-section {
+    height: 100vh;
+    background-image: url("image.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-section h1 {
+    font-size: 69px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.content-section {
+    display: block;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #130650;
+}
+
+h2 {
+    color: #130650;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.project {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #130650;
+    text-decoration: none;
+}
+
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-down .arrow {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-down .arrow::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transform: rotate(45deg);
+}
+
+.scroll-down .text {
+    font-size: 18px;
+}
+
+.scroll-down:hover {
+    opacity: 0.8;
+}
+
+.social-links {
+    display: flex; /* Muestra los íconos en línea horizontal */
+    justify-content: center; /* Centra los íconos horizontalmente dentro del contenedor */
+    background-color: #003366; /* Color de fondo del rectángulo */
+    width: 100%; /* Ancho del rectángulo (100% del ancho de la ventana) */
+    height: 35px; /* Altura del rectángulo */
+    position: fixed; /* Posición fija en la ventana */
+    bottom: 0; /* Alineación en la parte inferior */
+    left: 0; /* Alineación a la izquierda */
+    z-index: 999; /* Orden de apilamiento */
+    padding: 20px; /* Espaciado interno del contenedor */
+}
+  
+.social-links img {
+    background-color: transparent; /* Color de fondo transparente para los íconos */
+    background-position-x: center; /* Posición horizontal centrada de los íconos */
+    background-position-y: center; /* Posición vertical centrada de los íconos */
+    align-self: center; /* Centra verticalmente los íconos dentro del contenedor */
+    background-size: contain; /* Escala los íconos para que encajen dentro de su contenedor */
+    width: 50px; /* Ancho de los íconos */
+    height: 50px; /* Altura de los íconos */
+    margin-right: 15px; /* Espaciado derecho entre los íconos */
+}
+.social-links a {
+    margin-right: 20px; /* Espaciado derecho entre los íconos */
+    text-decoration: none; /* Sin decoración de texto en los enlaces */
+    color: #ffffff; /* Color del texto de los enlaces */
+}
+
+.social-links-hidden {
+    display: none; /* Oculta el contenedor de íconos */
+}
+
+.social-links img:hover {
+    filter: brightness(0) invert(1);
+}
+
